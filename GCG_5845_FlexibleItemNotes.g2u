@@ -1,0 +1,1504 @@
+﻿Program.Sub.ScreenSU.Start
+Gui.F_FlexibleNotes..Create
+Gui.F_FlexibleNotes..Caption("Flexible Item Notes")
+Gui.F_FlexibleNotes..Size(8460,13890)
+Gui.F_FlexibleNotes..MinX(8460)
+Gui.F_FlexibleNotes..MinY(14145)
+Gui.F_FlexibleNotes..Position(0,0)
+Gui.F_FlexibleNotes..BackColor(-2147483633)
+Gui.F_FlexibleNotes..MousePointer(0)
+Gui.F_FlexibleNotes..Event(UnLoad,F_UnLoad)
+Gui.F_FlexibleNotes.frameEdit.Create(Frame)
+Gui.F_FlexibleNotes.frameEdit.Size(8160,4965)
+Gui.F_FlexibleNotes.frameEdit.Position(90,0)
+Gui.F_FlexibleNotes.frameEdit.Anchor(13)
+Gui.F_FlexibleNotes.chkSOPopUp.Create(CheckBox)
+Gui.F_FlexibleNotes.chkSOPopUp.Size(1890,360)
+Gui.F_FlexibleNotes.chkSOPopUp.Position(90,195)
+Gui.F_FlexibleNotes.chkSOPopUp.Parent("frameEdit")
+Gui.F_FlexibleNotes.chkSOPopUp.Caption("Sales Order Pop Up")
+Gui.F_FlexibleNotes.chkSOPopUp.TabStop(True)
+Gui.F_FlexibleNotes.chkSOPopUp.TabIndex(1)
+Gui.F_FlexibleNotes.chkSOAck.Create(CheckBox)
+Gui.F_FlexibleNotes.chkSOAck.Size(2595,360)
+Gui.F_FlexibleNotes.chkSOAck.Position(2205,195)
+Gui.F_FlexibleNotes.chkSOAck.Parent("frameEdit")
+Gui.F_FlexibleNotes.chkSOAck.Caption("Print Order Acknowledgement")
+Gui.F_FlexibleNotes.chkSOAck.TabStop(True)
+Gui.F_FlexibleNotes.chkSOAck.TabIndex(4)
+Gui.F_FlexibleNotes.txtNotes.Create(TextboxM)
+Gui.F_FlexibleNotes.txtNotes.Size(7830,3105)
+Gui.F_FlexibleNotes.txtNotes.Position(150,1770)
+Gui.F_FlexibleNotes.txtNotes.Parent("frameEdit")
+Gui.F_FlexibleNotes.txtNotes.TabStop(True)
+Gui.F_FlexibleNotes.txtNotes.TabIndex(14)
+Gui.F_FlexibleNotes.txtNotes.MaxLength(32700)
+Gui.F_FlexibleNotes.txtNotes.Anchor(13)
+Gui.F_FlexibleNotes.chkSOPick.Create(CheckBox)
+Gui.F_FlexibleNotes.chkSOPick.Size(1290,360)
+Gui.F_FlexibleNotes.chkSOPick.Position(2205,945)
+Gui.F_FlexibleNotes.chkSOPick.Parent("frameEdit")
+Gui.F_FlexibleNotes.chkSOPick.Caption("Print Picklist")
+Gui.F_FlexibleNotes.chkSOPick.TabStop(True)
+Gui.F_FlexibleNotes.chkSOPick.TabIndex(6)
+Gui.F_FlexibleNotes.chkSOInv.Create(CheckBox)
+Gui.F_FlexibleNotes.chkSOInv.Size(1305,360)
+Gui.F_FlexibleNotes.chkSOInv.Position(2205,1320)
+Gui.F_FlexibleNotes.chkSOInv.Parent("frameEdit")
+Gui.F_FlexibleNotes.chkSOInv.Caption("Print Invoice")
+Gui.F_FlexibleNotes.chkSOInv.TabStop(True)
+Gui.F_FlexibleNotes.chkSOInv.TabIndex(7)
+Gui.F_FlexibleNotes.chkSOPack.Create(CheckBox)
+Gui.F_FlexibleNotes.chkSOPack.Size(1665,360)
+Gui.F_FlexibleNotes.chkSOPack.Position(2205,570)
+Gui.F_FlexibleNotes.chkSOPack.Parent("frameEdit")
+Gui.F_FlexibleNotes.chkSOPack.Caption("Print Packing List")
+Gui.F_FlexibleNotes.chkSOPack.TabStop(True)
+Gui.F_FlexibleNotes.chkSOPack.TabIndex(5)
+Gui.F_FlexibleNotes.cmdSave.Create(Button)
+Gui.F_FlexibleNotes.cmdSave.Size(855,375)
+Gui.F_FlexibleNotes.cmdSave.Position(6165,210)
+Gui.F_FlexibleNotes.cmdSave.Parent("frameEdit")
+Gui.F_FlexibleNotes.cmdSave.Caption("Save")
+Gui.F_FlexibleNotes.cmdSave.Event(Click,cmdSave_Click)
+Gui.F_FlexibleNotes.cmdSave.TabStop(True)
+Gui.F_FlexibleNotes.cmdSave.TabIndex(16)
+Gui.F_FlexibleNotes.cmdSave.Anchor(9)
+Gui.F_FlexibleNotes.cmdDel.Create(Button)
+Gui.F_FlexibleNotes.cmdDel.Size(855,375)
+Gui.F_FlexibleNotes.cmdDel.Position(7215,210)
+Gui.F_FlexibleNotes.cmdDel.Parent("frameEdit")
+Gui.F_FlexibleNotes.cmdDel.Caption("Delete")
+Gui.F_FlexibleNotes.cmdDel.Event(Click,cmdDel_Click)
+Gui.F_FlexibleNotes.cmdDel.TabStop(True)
+Gui.F_FlexibleNotes.cmdDel.TabIndex(17)
+Gui.F_FlexibleNotes.cmdDel.Anchor(9)
+Gui.F_FlexibleNotes.txtID.Create(TextBox,"",False,105,300,0,6945,1395,True,0,"Arial",8,-2147483643,1)
+Gui.F_FlexibleNotes.txtID.Parent("frameEdit")
+Gui.F_FlexibleNotes.cmdClear.Create(Button)
+Gui.F_FlexibleNotes.cmdClear.Size(855,375)
+Gui.F_FlexibleNotes.cmdClear.Position(5115,210)
+Gui.F_FlexibleNotes.cmdClear.Parent("frameEdit")
+Gui.F_FlexibleNotes.cmdClear.Caption("Clear")
+Gui.F_FlexibleNotes.cmdClear.Event(Click,cmdClear_Click)
+Gui.F_FlexibleNotes.cmdClear.TabStop(True)
+Gui.F_FlexibleNotes.cmdClear.TabIndex(15)
+Gui.F_FlexibleNotes.cmdClear.Anchor(9)
+Gui.F_FlexibleNotes.chkQPopUp.Create(CheckBox)
+Gui.F_FlexibleNotes.chkQPopUp.Size(1440,360)
+Gui.F_FlexibleNotes.chkQPopUp.Position(90,570)
+Gui.F_FlexibleNotes.chkQPopUp.Parent("frameEdit")
+Gui.F_FlexibleNotes.chkQPopUp.Caption("Quote Pop Up")
+Gui.F_FlexibleNotes.chkQPopUp.TabStop(True)
+Gui.F_FlexibleNotes.chkQPopUp.TabIndex(2)
+Gui.F_FlexibleNotes.chkPOPopUp.Create(CheckBox)
+Gui.F_FlexibleNotes.chkPOPopUp.Size(2100,360)
+Gui.F_FlexibleNotes.chkPOPopUp.Position(90,945)
+Gui.F_FlexibleNotes.chkPOPopUp.Parent("frameEdit")
+Gui.F_FlexibleNotes.chkPOPopUp.Caption("Purchase Order Pop Up")
+Gui.F_FlexibleNotes.chkPOPopUp.TabStop(True)
+Gui.F_FlexibleNotes.chkPOPopUp.TabIndex(3)
+Gui.F_FlexibleNotes.chkQPrint.Create(CheckBox)
+Gui.F_FlexibleNotes.chkQPrint.Size(1260,360)
+Gui.F_FlexibleNotes.chkQPrint.Position(3735,945)
+Gui.F_FlexibleNotes.chkQPrint.Parent("frameEdit")
+Gui.F_FlexibleNotes.chkQPrint.Caption("Print Quote")
+Gui.F_FlexibleNotes.chkQPrint.TabStop(True)
+Gui.F_FlexibleNotes.chkQPrint.TabIndex(8)
+Gui.F_FlexibleNotes.chkPOPrint.Create(CheckBox)
+Gui.F_FlexibleNotes.chkPOPrint.Size(1035,360)
+Gui.F_FlexibleNotes.chkPOPrint.Position(3735,1320)
+Gui.F_FlexibleNotes.chkPOPrint.Parent("frameEdit")
+Gui.F_FlexibleNotes.chkPOPrint.Caption("Print PO")
+Gui.F_FlexibleNotes.chkPOPrint.TabStop(True)
+Gui.F_FlexibleNotes.chkPOPrint.TabIndex(9)
+Gui.F_FlexibleNotes.txtPart.Create(TextBox,"",False,2040,300,0,5100,855,True,0,"Arial",8,-2147483643,1)
+Gui.F_FlexibleNotes.txtPart.Parent("frameEdit")
+Gui.F_FlexibleNotes.txtPart.TabStop(True)
+Gui.F_FlexibleNotes.txtPart.TabIndex(10)
+Gui.F_FlexibleNotes.txtPart.MaxLength(20)
+Gui.F_FlexibleNotes.txtLoc.Create(TextBox,"",False,750,300,0,5100,1425,True,0,"Arial",8,-2147483643,1)
+Gui.F_FlexibleNotes.txtLoc.Parent("frameEdit")
+Gui.F_FlexibleNotes.txtLoc.TabStop(True)
+Gui.F_FlexibleNotes.txtLoc.TabIndex(12)
+Gui.F_FlexibleNotes.txtLoc.MaxLength(2)
+Gui.F_FlexibleNotes.lblPart.Create(Label,"Part",False,495,255,0,5130,645,True,0,"Arial",8,-2147483633,0)
+Gui.F_FlexibleNotes.lblPart.Parent("frameEdit")
+Gui.F_FlexibleNotes.lblLoc.Create(Label,"Loc",False,495,255,0,5130,1215,True,0,"Arial",8,-2147483633,0)
+Gui.F_FlexibleNotes.lblLoc.Parent("frameEdit")
+Gui.F_FlexibleNotes.cmdPartLocBRW.Create(Button)
+Gui.F_FlexibleNotes.cmdPartLocBRW.Size(375,375)
+Gui.F_FlexibleNotes.cmdPartLocBRW.Position(6015,1350)
+Gui.F_FlexibleNotes.cmdPartLocBRW.TabStop(True)
+Gui.F_FlexibleNotes.cmdPartLocBRW.TabIndex(13)
+Gui.F_FlexibleNotes.cmdPartLocBRW.Caption("^")
+Gui.F_FlexibleNotes.cmdPartLocBRW.Event(Click,cmdPartLocBRW_Click)
+Gui.F_FlexibleNotes.cmdPartLocBRW.Parent("frameEdit")
+Gui.F_FlexibleNotes.cmdPartLocBRW.Visible(False)
+Gui.F_FlexibleNotes.txtRev.Create(TextBox,"",False,705,300,0,7290,855,True,0,"Arial",8,-2147483643,1)
+Gui.F_FlexibleNotes.txtRev.Parent("frameEdit")
+Gui.F_FlexibleNotes.txtRev.TabStop(True)
+Gui.F_FlexibleNotes.txtRev.TabIndex(11)
+Gui.F_FlexibleNotes.txtRev.MaxLength(3)
+Gui.F_FlexibleNotes.lblRev.Create(Label,"Rev",False,495,255,0,7320,645,True,0,"Arial",8,-2147483633,0)
+Gui.F_FlexibleNotes.lblRev.Parent("frameEdit")
+Gui.F_FlexibleNotes.gsNotes.Create(GsGridControl)
+Gui.F_FlexibleNotes.gsNotes.Size(8340,8565)
+Gui.F_FlexibleNotes.gsNotes.Position(0,5010)
+Gui.F_FlexibleNotes.gsNotes.Event(RowClick,gsNotes_RowClick)
+Gui.F_FlexibleNotes.gsNotes.Anchor(15)
+Gui.F_FlexibleNotes.gsNotes.TabStop(True)
+Gui.F_FlexibleNotes.gsNotes.TabIndex(17)
+Gui.F_ShowNotes..Create
+Gui.F_ShowNotes..Caption("Notes")
+Gui.F_ShowNotes..Size(8175,8850)
+Gui.F_ShowNotes..MinX(8055)
+Gui.F_ShowNotes..MinY(8565)
+Gui.F_ShowNotes..Position(0,0)
+Gui.F_ShowNotes..BackColor(-2147483633)
+Gui.F_ShowNotes..MousePointer(0)
+Gui.F_ShowNotes..Event(UnLoad,F_ShowNotes_UnLoad)
+Gui.F_ShowNotes.gsNotes.Create(GsGridControl)
+Gui.F_ShowNotes.gsNotes.Size(8055,8565)
+Gui.F_ShowNotes.gsNotes.Position(0,0)
+Gui.F_ShowNotes.gsNotes.Anchor(15)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+V.Global.sPart.Declare
+V.Global.sLoc.Declare
+V.Global.i.Declare
+Program.External.Include.Library("GCG_5845_Try_Catch.lib")
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'Bix
+'4/7/18
+'GCG_5011_FlexibleItemNotes.g2u
+'The Tool House, Inc.
+'Program houses main control for Flexible Item Notes interfaces. Included are the screens for editing the notes, deleting the notes, and adding new notes under the Inventory Master and Supply and Demand. Also included are the Pop Notes screens when a part with notes that are activated for Pop Notes is added to a SO, Quote or PO Line.
+'Edit by BixRB
+'22 Jan 2020
+'GCG_5845_FlexibleItemNotes.g2u
+'Updated this script to standard coding practices (what was I thinking when I first wrote this?????) and added extra functionality: Script 2 buttons on Quote Lines, Sales Order Lines and Purchase Order Lines; Menu Item to edit all Parts; and dear God use Args when you can
+'Can't change Line on PO Lines screen so the Populate hook acts as the button caption setter AND the button outline color setter
+'Key Subroutines: CheckForPartAndColor, ScriptButtonLaunch, PartAddEvent, MasterMenuItem
+'Quotes Line screen is BORKED so I added a file checking system to see what the last part loaded on the Quote Lines Screen was since the PART-CHG-HOOK doesn't work
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+
+'Disable editing and deleting if in a View, Copy, Delete, or 
+F.Intrinsic.Control.If(V.Caller.Switches,!=,"O",and,V.Caller.Switches,!=,"N",V.Caller.Switches,!=,"M")
+	Gui.F_FlexibleNotes.cmdSave.Visible(False)
+	Gui.F_FlexibleNotes.cmdDel.Visible(False)
+	Gui.F_FlexibleNotes.chkSOPopUp.Enabled(False)
+	Gui.F_FlexibleNotes.chkQPopUp.Enabled(False)
+	Gui.F_FlexibleNotes.chkPOPopUp.Enabled(False)
+	Gui.F_FlexibleNotes.chkSOAck.Enabled(False)
+	Gui.F_FlexibleNotes.chkSOPack.Enabled(False)
+	Gui.F_FlexibleNotes.chkSOPick.Enabled(False)
+	Gui.F_FlexibleNotes.chkSOInv.Enabled(False)
+	Gui.F_FlexibleNotes.chkQPrint.Enabled(False)
+	Gui.F_FlexibleNotes.chkPOPrint.Enabled(False)
+	Gui.F_FlexibleNotes.txtNotes.Enabled(False)
+F.Intrinsic.Control.EndIf
+
+'Hook Check - Not all these hooks need to be turned on to use the program
+F.Intrinsic.Control.SelectCase(V.Caller.Hook)
+	F.Intrinsic.Control.Case(10120)
+		'INS010B Populate Hook, Rename Script 3 Button
+		V.Passed.000070.Set("Flexible Notes")
+	F.Intrinsic.Control.Case(10125)
+		'INS010B Part Change Hook, Change Script 3 Outline Color
+		F.Intrinsic.Control.CallSub(CheckForPartAndColor,"PartID","000007","RevID","000008","LocID","000009","ButtonID","000070","PopType","")
+	F.Intrinsic.Control.Case(10230)
+		'INS010B Script 3 Button Hook, Launch notes editor
+		F.Intrinsic.Control.CallSub(ScriptButtonLaunch,"PartID","000007","RevID","000008","LocID","000009","PopType","")
+	F.Intrinsic.Control.Case(10260)
+		'QTS0201L Populate Hook, Rename Script 2 Button
+		F.Intrinsic.Control.CallSub(DeleteQuoteLinesTempFile)
+		V.Passed.000202.Set("Flexible Notes")
+	F.Intrinsic.Control.CaseAny(10270,10280)
+		'QTS0201L Line Change Hook, Change Script 2 Outline Color
+		F.Intrinsic.Control.CallSub(DeleteQuoteLinesTempFile)
+		F.Intrinsic.Control.CallSub(CheckForPartAndColor,"PartID","000052","RevID","000053","LocID","000054","ButtonID","000202","PopType","Q")
+	F.Intrinsic.Control.CaseAny(10290,10300,10310)
+		'QTS0201L Part Change Hook, Change Script 2 Outline Color & Launch Pop Notes Viewer from Quote Lines
+		F.Intrinsic.Control.CallSub(CheckQuoteLinesTempFile,"PartID","000052","RevID","000053","LocID","000054")
+		F.Intrinsic.Control.CallSub(CheckForPartAndColor,"PartID","000052","RevID","000053","LocID","000054","ButtonID","000202","PopType","Q")
+		F.Data.DataTable.Close("dt")
+		F.Intrinsic.Control.CallSub(PartAddEvent,"PartID","000052","RevID","000053","LocID","000054","PopType","Q")
+	F.Intrinsic.Control.Case(10680)
+		'QTS0201L Script 2 Button Hook, Launch Pop Notes Viewer from Quote Lines
+		F.Intrinsic.Control.CallSub(PartAddEvent,"PartID","000052","RevID","000053","LocID","000054","PopType","Q")
+		F.Intrinsic.Control.If(V.DataTable.dtQ.RowCount,=,0)
+			F.Intrinsic.UI.Msgbox("No Flexible Inventory Notes found. Exiting Program.","Exiting Program")
+			F.Data.DataTable.Close("dtQ")
+			F.Intrinsic.Control.End
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Case(12010)
+		'OES0201I Populate Hook, Rename Script 2 Button
+		V.Passed.000141.Set("Flexible Notes")
+	F.Intrinsic.Control.Case(12201)
+		'OES0201I Part Change Hook, Change Script 2 Outline Color & Launch Pop Notes Viewer from SO Lines
+		F.Intrinsic.Control.CallSub(CheckForPartAndColor,"PartID","000052","RevID","000053","LocID","000054","ButtonID","000141","PopType","SO")
+		F.Data.DataTable.Close("dt")
+		F.Intrinsic.Control.CallSub(PartAddEvent,"PartID","000052","RevID","000053","LocID","000054","PopType","SO")
+	F.Intrinsic.Control.Case(12420)
+		'OES0201I Script 2 Button Hook, Launch Pop Notes Viewer from SO Lines
+		F.Intrinsic.Control.CallSub(PartAddEvent,"PartID","000052","RevID","000053","LocID","000054","PopType","SO")
+		F.Intrinsic.Control.If(V.DataTable.dtSO.RowCount,=,0)
+			F.Intrinsic.UI.Msgbox("No Flexible Inventory Notes found. Exiting Program.","Exiting Program")
+			F.Data.DataTable.Close("dtSO")
+			F.Intrinsic.Control.End
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Case(12705)
+		'OES0201I Line Change Hook, Change Script 2 Outline Color
+		F.Intrinsic.Control.CallSub(CheckForPartAndColor,"PartID","000052","RevID","000053","LocID","000054","ButtonID","000141","PopType","SO")
+	F.Intrinsic.Control.Case(14045)
+		'INS500 Populate Hook, Rename Script 3 Button
+		V.Passed.000253.Set("Flexible Notes")
+	F.Intrinsic.Control.Case(14050)
+		'INS500 Part Change Hook, Change Script 3 Outline Color
+		F.Intrinsic.Control.CallSub(CheckForPartAndColor,"PartID","000003","RevID","000099","LocID","000004","ButtonID","000253","PopType","")
+	F.Intrinsic.Control.Case(14090)
+		'INS500 Script 3 Button Hook, Launch notes editor
+		F.Intrinsic.Control.CallSub(ScriptButtonLaunch,"PartID","000003","RevID","000099","LocID","000004","PopType","")
+	F.Intrinsic.Control.Case(17050)
+		'PUS064LN Populate Hook, Rename Script 2 Button & Change Script 2 Outline Color
+		V.Passed.000101.Set("Flexible Notes")
+		F.Intrinsic.Control.CallSub(CheckForPartAndColor,"PartID","000008","RevID","000009","LocID","000011","ButtonID","000101","PopType","PO")
+	F.Intrinsic.Control.Case(17170)
+		'PUS064LN Script 2 Button Hook, Launch Pop Notes Viewer from PO Lines
+		F.Intrinsic.Control.CallSub(PartAddEvent,"PartID","000008","RevID","000009","LocID","000011","PopType","PO")
+		F.Intrinsic.Control.If(V.DataTable.dtPO.RowCount,=,0)
+			F.Intrinsic.UI.Msgbox("No Flexible Inventory Notes found. Exiting Program.","Exiting Program")
+			F.Data.DataTable.Close("dtPO")
+			F.Intrinsic.Control.End
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Case(17186)
+		'PUS064LN Part Change Hook, Change Script 2 Outline Color & Launch Pop Notes Viewer from PO Lines
+		F.Intrinsic.Control.CallSub(CheckForPartAndColor,"PartID","000008","RevID","000009","LocID","000011","ButtonID","000101","PopType","PO")
+		F.Data.DataTable.Close("dt")
+		F.Intrinsic.Control.CallSub(PartAddEvent,"PartID","000008","RevID","000009","LocID","000011","PopType","PO")
+	F.Intrinsic.Control.Case(52000)
+		'S/D New Entry Hook
+		V.Passed.Script3NewName.Set("Flexible Notes")
+	F.Intrinsic.Control.Case(52052)
+		'S/D New Script 3 Hook
+		F.Intrinsic.Control.CallSub(ScriptButtonLaunch,"PartID","PartNumber","RevID","PartNumberRevision","LocID","LocationCode","PopType","")
+	F.Intrinsic.Control.CaseElse
+		'This is for menu items
+'		F.Intrinsic.Control.If(V.Caller.Switches,=,"M")
+			'Master screen that has all parts and their notes
+			F.Intrinsic.Control.CallSub(MasterMenuItem)
+'		F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndSelect
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.F_UnLoad.Start
+'save and close DT and end program
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.If(V.DataTable.dt.Exists)
+	F.Intrinsic.Control.If(V.Global.sPart,!=,"")
+		F.Intrinsic.Control.CallSub(Serialize,"GV","ONEPART")
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.CallSub(Serialize,"GV","ALLPARTS")
+	F.Intrinsic.Control.EndIf
+	F.ODBC.Connection!con.OpenCompanyConnection
+	F.Data.DataTable.SaveToDB("dt","con","GCG_5845_POP_NOTES","ID",7)
+	F.ODBC.Connection!con.Close
+	F.Data.DataTable.Close("dt")
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.F_UnLoad.End
+
+Program.Sub.CheckForTable.Start
+'If custom table doesn't exist, create it
+V.Local.bTable.Declare
+F.Intrinsic.Control.Try
+
+'Sub is obsolete since the table is in the manifest, but I used it to add the table while I was still in the process of making changes frequently and testing on customer's system so I'm keeping it. Also nice to have something that checks for table
+F.ODBC.Connection!con.OpenCompanyConnection
+F.ODBC.Connection!con.TableExists("GCG_5845_POP_NOTES",V.Local.bTable)
+F.Intrinsic.Control.If(V.Local.bTable,=,False)
+	F.Intrinsic.UI.Msgbox("Custom Notes Table does not exist. Exiting program.")
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndIf
+F.ODBC.Connection!con.Close
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.CheckForTable.End
+
+Program.Sub.GetDataTable.Start
+'Args: V.Args.PopType
+'retrieve all the fields for specified part in custom table
+V.Local.sSQL.Declare
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.SelectCase(V.Args.PopType.UCase)
+	F.Intrinsic.Control.Case("Q")
+		F.Intrinsic.String.Build("select ID, PART, left(PART, 17) as PART_NUM, right(PART, 3) as PART_REV, LOCATION, SO_POP, Q_POP, PO_POP, SO_PRINT_ACK, SO_PRINT_PICK, SO_PRINT_PACK, SO_PRINT_INV, Q_PRINT, PO_PRINT, rtrim(NOTES) as 'NOTES' from GCG_5845_POP_NOTES where PART = '{0}' and LOCATION = '{1}' and Q_POP = 1 order by ID",V.Global.sPart,V.Global.sLoc,V.Local.sSQL)
+	F.Intrinsic.Control.Case("SO")
+		F.Intrinsic.String.Build("select ID, PART, left(PART, 17) as PART_NUM, right(PART, 3) as PART_REV, LOCATION, SO_POP, Q_POP, PO_POP, SO_PRINT_ACK, SO_PRINT_PICK, SO_PRINT_PACK, SO_PRINT_INV, Q_PRINT, PO_PRINT, rtrim(NOTES) as 'NOTES' from GCG_5845_POP_NOTES where PART = '{0}' and LOCATION = '{1}' and SO_POP = 1 order by ID",V.Global.sPart,V.Global.sLoc,V.Local.sSQL)
+	F.Intrinsic.Control.Case("PO")
+		F.Intrinsic.String.Build("select ID, PART, left(PART, 17) as PART_NUM, right(PART, 3) as PART_REV, LOCATION, SO_POP, Q_POP, PO_POP, SO_PRINT_ACK, SO_PRINT_PICK, SO_PRINT_PACK, SO_PRINT_INV, Q_PRINT, PO_PRINT, rtrim(NOTES) as 'NOTES' from GCG_5845_POP_NOTES where PART = '{0}' and LOCATION = '{1}' and PO_POP = 1 order by ID",V.Global.sPart,V.Global.sLoc,V.Local.sSQL)
+	F.Intrinsic.Control.CaseElse
+		F.Intrinsic.String.Build("select ID, PART, left(PART, 17) as PART_NUM, right(PART, 3) as PART_REV, LOCATION, SO_POP, Q_POP, PO_POP, SO_PRINT_ACK, SO_PRINT_PICK, SO_PRINT_PACK, SO_PRINT_INV, Q_PRINT, PO_PRINT, rtrim(NOTES) as 'NOTES' from GCG_5845_POP_NOTES where PART = '{0}' and LOCATION = '{1}' order by ID",V.Global.sPart,V.Global.sLoc,V.Local.sSQL)
+F.Intrinsic.Control.EndSelect
+
+F.ODBC.Connection!con.OpenCompanyConnection
+F.Data.DataTable.CreateFromSQL("dt","con",V.Local.sSQL,True)
+F.ODBC.Connection!con.Close
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.GetDataTable.End
+
+Program.Sub.PopulateSONotes.Start
+'populate fields for SO Notes in small form
+
+F.Data.DataView.Create("dt","dv")
+F.Data.DataView.SetFilter("dt","dv","SO_POP = 1")
+F.Data.DataView.ToDataTable("dt","dv","dtSO",True)
+
+F.Intrinsic.Control.If(V.DataTable.dtSO.RowCount,=,0)
+	F.Data.DataTable.Close("dt")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+Gui.F_ShowNotes.gsNotes.AddGridviewFromDatatable("gvSONotes","dtSO")
+
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvSONotes","MultiSelect",False)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvSONotes","AllowSort",True)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvSONotes","AllowFilter",True)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvSONotes","OptionsDetailShowDetailTabs",False)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvSONotes","OptionsViewShowGroupPanel",True)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvSONotes","EnableAppearanceEvenRow",True)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvSONotes","OptionsViewColumnAutoWidth",False)
+Gui.F_ShowNotes.gsNotes.SetGridViewProperty("gvSONotes","ColumnPanelRowHeight",35)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvSONotes","OptionsViewRowAutoHeight",True)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvSONotes","ShowGroupPanel",False)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","ID","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","PART","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","PART_NUM","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","PART_REV","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","LOCATION","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_POP","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","Q_POP","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","PO_POP","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","Q_PRINT","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","PO_PRINT","Visible",False)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_ACK","Caption","Order Ack")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PACK","Caption","Packing List")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PICK","Caption","Pick List")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_INV","Caption","Invoice")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","NOTES","Caption","Notes")
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_ACK","AllowEdit",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PACK","AllowEdit",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PICK","AllowEdit",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_INV","AllowEdit",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","NOTES","AllowEdit",False)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_ACK","AllowFocus",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PACK","AllowFocus",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PICK","AllowFocus",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_INV","AllowFocus",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","NOTES","AllowFocus",False)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_ACK","MinWidth",40)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PACK","MinWidth",55)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PICK","MinWidth",40)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_INV","MinWidth",55)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","NOTES","MinWidth",326)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_ACK","Width",40)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PACK","Width",55)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PICK","Width",40)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_INV","Width",55)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","NOTES","Width",326)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_ACK","MaxWidth",40)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PACK","MaxWidth",55)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PICK","MaxWidth",40)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_INV","MaxWidth",55)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_ACK","HeaderFontBold",True)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PACK","HeaderFontBold",True)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PICK","HeaderFontBold",True)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_INV","HeaderFontBold",True)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","NOTES","HeaderFontBold",True)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_ACK","HeaderHAlignment","Center")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PACK","HeaderHAlignment","Center")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PICK","HeaderHAlignment","Center")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_INV","HeaderHAlignment","Center")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","NOTES","HeaderHAlignment","Center")
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_ACK","HeaderWordWrap","Wrap")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PACK","HeaderWordWrap","Wrap")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_PICK","HeaderWordWrap","Wrap")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","SO_PRINT_INV","HeaderWordWrap","Wrap")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","NOTES","HeaderWordWrap","Wrap")
+	
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","NOTES","CellHAlignment","Near")
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvSONotes","NOTES","CellWordWrap","Wrap")
+
+Gui.F_ShowNotes.gsNotes.MainView("gvSONotes")
+
+Gui.F_ShowNotes..Show
+Gui.F_ShowNotes..SetFocus
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.PopulateSONotes.End
+
+Program.Sub.PopulateQNotes.Start
+'populate fields for Quote Notes in small form
+F.Intrinsic.Control.Try
+
+F.Data.DataView.Create("dt","dv")
+F.Data.DataView.SetFilter("dt","dv","Q_POP = 1")
+F.Data.DataView.ToDataTable("dt","dv","dtQ",True)
+
+F.Intrinsic.Control.If(V.DataTable.dtQ.RowCount,=,0)
+	F.Data.DataTable.Close("dt")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+Gui.F_ShowNotes.gsNotes.AddGridviewFromDatatable("gvQNotes","dtQ")
+
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvQNotes","MultiSelect",False)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvQNotes","AllowSort",True)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvQNotes","AllowFilter",True)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvQNotes","OptionsDetailShowDetailTabs",False)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvQNotes","OptionsViewShowGroupPanel",True)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvQNotes","EnableAppearanceEvenRow",True)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvQNotes","OptionsViewColumnAutoWidth",False)
+Gui.F_ShowNotes.gsNotes.SetGridViewProperty("gvQNotes","ColumnPanelRowHeight",35)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvQNotes","OptionsViewRowAutoHeight",True)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvQNotes","ShowGroupPanel",False)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","ID","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","PART","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","PART_NUM","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","PART_REV","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","LOCATION","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","SO_POP","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","Q_POP","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","PO_POP","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","SO_PRINT_ACK","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","SO_PRINT_PACK","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","SO_PRINT_PICK","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","SO_PRINT_INV","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","PO_PRINT","Visible",False)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","Q_PRINT","Caption","Quote")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","NOTES","Caption","Notes")
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","Q_PRINT","AllowEdit",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","NOTES","AllowEdit",False)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","Q_PRINT","AllowFocus",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","NOTES","AllowFocus",False)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","Q_PRINT","MinWidth",43)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","NOTES","MinWidth",473)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","Q_PRINT","Width",43)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","NOTES","Width",473)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","Q_PRINT","MaxWidth",43)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","Q_PRINT","HeaderFontBold",True)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","NOTES","HeaderFontBold",True)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","Q_PRINT","HeaderHAlignment","Center")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","NOTES","HeaderHAlignment","Center")
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","Q_PRINT","HeaderWordWrap","Wrap")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","NOTES","HeaderWordWrap","Wrap")
+	
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","NOTES","CellHAlignment","Near")
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvQNotes","NOTES","CellWordWrap","Wrap")
+
+Gui.F_ShowNotes.gsNotes.MainView("gvQNotes")
+
+Gui.F_ShowNotes..Show
+Gui.F_ShowNotes..SetFocus
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.PopulateQNotes.End
+
+Program.Sub.PopulatePONotes.Start
+'populate fields for PO Notes in small form
+F.Intrinsic.Control.Try
+
+F.Data.DataView.Create("dt","dv")
+F.Data.DataView.SetFilter("dt","dv","PO_POP = 1")
+F.Data.DataView.ToDataTable("dt","dv","dtPO",True)
+
+F.Intrinsic.Control.If(V.DataTable.dtPO.RowCount,=,0)
+	F.Data.DataTable.Close("dt")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+Gui.F_ShowNotes.gsNotes.AddGridviewFromDatatable("gvPONotes","dtPO")
+
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvPONotes","MultiSelect",False)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvPONotes","AllowSort",True)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvPONotes","AllowFilter",True)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvPONotes","OptionsDetailShowDetailTabs",False)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvPONotes","OptionsViewShowGroupPanel",True)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvPONotes","EnableAppearanceEvenRow",True)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvPONotes","OptionsViewColumnAutoWidth",False)
+Gui.F_ShowNotes.gsNotes.SetGridViewProperty("gvPONotes","ColumnPanelRowHeight",35)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvPONotes","OptionsViewRowAutoHeight",True)
+Gui.F_ShowNotes.gsNotes.SetGridviewProperty("gvPONotes","ShowGroupPanel",False)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","ID","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","PART","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","PART_NUM","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","PART_REV","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","LOCATION","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","SO_POP","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","Q_POP","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","PO_POP","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","SO_PRINT_ACK","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","SO_PRINT_PACK","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","SO_PRINT_PICK","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","SO_PRINT_INV","Visible",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","Q_PRINT","Visible",False)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","PO_PRINT","Caption","PO")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","NOTES","Caption","Notes")
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","PO_PRINT","AllowEdit",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","NOTES","AllowEdit",False)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","PO_PRINT","AllowFocus",False)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","NOTES","AllowFocus",False)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","PO_PRINT","MinWidth",25)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","NOTES","MinWidth",491)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","PO_PRINT","Width",25)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","NOTES","Width",491)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","PO_PRINT","MaxWidth",25)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","PO_PRINT","HeaderFontBold",True)
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","NOTES","HeaderFontBold",True)
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","PO_PRINT","HeaderHAlignment","Center")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","NOTES","HeaderHAlignment","Center")
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","PO_PRINT","HeaderWordWrap","Wrap")
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","NOTES","HeaderWordWrap","Wrap")
+	
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","NOTES","CellHAlignment","Near")
+
+Gui.F_ShowNotes.gsNotes.SetColumnProperty("gvPONotes","NOTES","CellWordWrap","Wrap")
+
+Gui.F_ShowNotes.gsNotes.MainView("gvPONotes")
+
+Gui.F_ShowNotes..Show
+Gui.F_ShowNotes..SetFocus
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.PopulatePONotes.End
+
+Program.Sub.cmdSave_Click.Start
+'Saves note to DT and then saves DT to DB Table and reloads DT
+V.Local.sPart.Declare
+V.Local.iID.Declare
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.BlockEvents
+
+'Checks if notes box has something in it
+F.Intrinsic.Control.If(V.Screen.F_FlexibleNotes!txtNotes.Text,=,"")
+	F.Intrinsic.UI.Msgbox("No notes entered; canceling action.","Exiting 'Save' command")
+	F.Intrinsic.Control.UnBlockEvents
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+'If editing notes, make an edit, otherwise add the data as a new entry
+F.Intrinsic.Control.If(V.Screen.F_FlexibleNotes!txtID.Text,=,"")
+	'Get the next ID from DB
+	F.ODBC.Connection!con.OpenCompanyConnection
+	F.ODBC.Connection!con.ExecuteAndReturn("select max(ID) from GCG_5845_POP_NOTES",V.Local.iID)
+	F.ODBC.Connection!con.Close
+	F.Intrinsic.Control.If(V.Ambient.ExecuteAndReturnEOF)
+		V.Local.iID.Set(1)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Math.Add(V.Local.iID,1,V.Local.iID)
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.If(V.Global.sPart,!=,"")
+		F.Data.DataTable.AddRow("dt","ID",V.Local.iID,"PART",V.Global.sPart,"LOCATION",V.Global.sLoc,"SO_POP",V.Screen.F_FlexibleNotes!chkSOPopUp.Value,"Q_POP",V.Screen.F_FlexibleNotes!chkQPopUp.Value,"PO_POP",V.Screen.F_FlexibleNotes!chkPOPopUp.Value,"SO_PRINT_ACK",V.Screen.F_FlexibleNotes!chkSOAck.Value,"SO_PRINT_PICK",V.Screen.F_FlexibleNotes!chkSOPick.Value,"SO_PRINT_PACK",V.Screen.F_FlexibleNotes!chkSOPack.Value,"SO_PRINT_INV",V.Screen.F_FlexibleNotes!chkSOInv.Value,"Q_PRINT",V.Screen.F_FlexibleNotes!chkQPrint.Value,"PO_PRINT",V.Screen.F_FlexibleNotes!chkPOPrint.Value,"NOTES",V.Screen.F_FlexibleNotes!txtNotes.Text)
+	F.Intrinsic.Control.Else
+		'Check that the part entered exists before adding info to the list
+		F.Intrinsic.Control.CallSub(RevOptionCheck)
+		F.Intrinsic.Control.If(V.Args.UseRev)
+			'Rev is in use
+			F.Global.Inventory.GetPartInfo(V.Screen.F_FlexibleNotes!txtPart.Text,V.Screen.F_FlexibleNotes!txtRev.Text,V.Screen.F_FlexibleNotes!txtLoc.Text,V.Local.sPart)
+		F.Intrinsic.Control.Else
+			'Rev is not in use
+			F.Global.Inventory.GetPartInfo(V.Screen.F_FlexibleNotes!txtPart.Text,V.Screen.F_FlexibleNotes!txtLoc.Text,V.Local.sPart)
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.If(V.Local.sPart,=,"***NOPARTFOUND***")
+			'Part does not exist, alert user and exit sub
+			F.Intrinsic.UI.Msgbox("Part could not be found; canceling action.","Exiting 'Save' command")
+			F.Intrinsic.Control.UnBlockEvents
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.If(V.Args.UseRev)
+			'Rev is in use
+			F.Intrinsic.String.GSSPartString(V.Screen.F_FlexibleNotes!txtPart.Text,V.Screen.F_FlexibleNotes!txtRev.Text,V.Local.sPart)
+			F.Data.DataTable.AddRow("dt","ID",V.Local.iID,"PART",V.Local.sPart.Trim,"PART_NUM",V.Screen.F_FlexibleNotes!txtPart.Text.Trim,"PART_REV",V.Screen.F_FlexibleNotes!txtRev.Text.Trim,"LOCATION",V.Screen.F_FlexibleNotes!txtLoc.Text.Trim,"SO_POP",V.Screen.F_FlexibleNotes!chkSOPopUp.Value,"Q_POP",V.Screen.F_FlexibleNotes!chkQPopUp.Value,"PO_POP",V.Screen.F_FlexibleNotes!chkPOPopUp.Value,"SO_PRINT_ACK",V.Screen.F_FlexibleNotes!chkSOAck.Value,"SO_PRINT_PICK",V.Screen.F_FlexibleNotes!chkSOPick.Value,"SO_PRINT_PACK",V.Screen.F_FlexibleNotes!chkSOPack.Value,"SO_PRINT_INV",V.Screen.F_FlexibleNotes!chkSOInv.Value,"Q_PRINT",V.Screen.F_FlexibleNotes!chkQPrint.Value,"PO_PRINT",V.Screen.F_FlexibleNotes!chkPOPrint.Value,"NOTES",V.Screen.F_FlexibleNotes!txtNotes.Text)
+		F.Intrinsic.Control.Else
+			'Rev is not in use
+			F.Data.DataTable.AddRow("dt","ID",V.Local.iID,"PART",V.Screen.F_FlexibleNotes!txtPart.Text.Trim,"PART_NUM","","PART_REV","","LOCATION",V.Screen.F_FlexibleNotes!txtLoc.Text.Trim,"SO_POP",V.Screen.F_FlexibleNotes!chkSOPopUp.Value,"Q_POP",V.Screen.F_FlexibleNotes!chkQPopUp.Value,"PO_POP",V.Screen.F_FlexibleNotes!chkPOPopUp.Value,"SO_PRINT_ACK",V.Screen.F_FlexibleNotes!chkSOAck.Value,"SO_PRINT_PICK",V.Screen.F_FlexibleNotes!chkSOPick.Value,"SO_PRINT_PACK",V.Screen.F_FlexibleNotes!chkSOPack.Value,"SO_PRINT_INV",V.Screen.F_FlexibleNotes!chkSOInv.Value,"Q_PRINT",V.Screen.F_FlexibleNotes!chkQPrint.Value,"PO_PRINT",V.Screen.F_FlexibleNotes!chkPOPrint.Value,"NOTES",V.Screen.F_FlexibleNotes!txtNotes.Text)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Else
+	F.Data.DataTable.SetValue("dt",V.Global.i,"SO_POP",V.Screen.F_FlexibleNotes!chkSOPopUp.Value,"Q_POP",V.Screen.F_FlexibleNotes!chkQPopUp.Value,"PO_POP",V.Screen.F_FlexibleNotes!chkPOPopUp.Value,"SO_PRINT_ACK",V.Screen.F_FlexibleNotes!chkSOAck.Value,"SO_PRINT_PICK",V.Screen.F_FlexibleNotes!chkSOPick.Value,"SO_PRINT_PACK",V.Screen.F_FlexibleNotes!chkSOPack.Value,"SO_PRINT_INV",V.Screen.F_FlexibleNotes!chkSOInv.Value,"Q_PRINT",V.Screen.F_FlexibleNotes!chkQPrint.Value,"PO_PRINT",V.Screen.F_FlexibleNotes!chkPOPrint.Value,"NOTES",V.Screen.F_FlexibleNotes!txtNotes.Text)
+	Gui.F_FlexibleNotes.txtID.Text("")
+F.Intrinsic.Control.EndIf
+
+'Save and Accept Changes
+F.Data.DataTable.Clone("dt","dtSave",True)
+F.Data.DataTable.Merge("dt","dtSave",True,3)
+F.Data.DataTable.RemoveColumn("dtSave","PART_NUM")
+F.Data.DataTable.RemoveColumn("dtSave","PART_REV")
+F.ODBC.Connection!con.OpenCompanyConnection
+F.Data.DataTable.SaveToDB("dtSave","con","GCG_5845_POP_NOTES","ID",7)
+F.ODBC.Connection!con.Close
+F.Data.DataTable.Close("dtSave")
+F.Data.DataTable.AcceptChanges("dt")
+
+'Clear fields
+Gui.F_FlexibleNotes.chkSOPopUp.Value(0)
+Gui.F_FlexibleNotes.chkQPopUp.Value(0)
+Gui.F_FlexibleNotes.chkPOPopUp.Value(0)
+Gui.F_FlexibleNotes.chkSOAck.Value(0)
+Gui.F_FlexibleNotes.chkSOPick.Value(0)
+Gui.F_FlexibleNotes.chkSOPack.Value(0)
+Gui.F_FlexibleNotes.chkSOInv.Value(0)
+Gui.F_FlexibleNotes.chkQPrint.Value(0)
+Gui.F_FlexibleNotes.chkPOPrint.Value(0)
+Gui.F_FlexibleNotes.txtNotes.Text("")
+Gui.F_FlexibleNotes.txtPart.Text("")
+Gui.F_FlexibleNotes.txtRev.Text("")
+Gui.F_FlexibleNotes.txtLoc.Text("")
+
+Gui.F_FlexibleNotes.txtPart.Enabled(True)
+Gui.F_FlexibleNotes.txtRev.Enabled(True)
+Gui.F_FlexibleNotes.txtLoc.Enabled(True)
+Gui.F_FlexibleNotes.cmdPartLocBRW.Enabled(True)
+
+F.Intrinsic.Control.UnBlockEvents
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdSave_Click.End
+
+Program.Sub.cmdDel_Click.Start
+'Deletes selected entry from DT, saves DT and reloads DT
+V.Local.iRet.Declare
+F.Intrinsic.Control.Try
+
+'Checks if editing an already existing notes entry
+F.Intrinsic.Control.If(V.Screen.F_FlexibleNotes!txtID.Text,!=,"")
+	'Asks for confirmation
+	F.Intrinsic.UI.Msgbox("Are you sure that you want to delete this note entry?","Delete Confirmation",4,V.Local.iRet)
+	F.Intrinsic.Control.If(V.Local.iRet,=,7)
+		'No
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	'Yes
+	F.Data.DataTable.DeleteRow("dt",V.Global.i)
+	Gui.F_FlexibleNotes.txtID.Text("")
+	Gui.F_FlexibleNotes.chkSOPopUp.Value(0)
+	Gui.F_FlexibleNotes.chkQPopUp.Value(0)
+	Gui.F_FlexibleNotes.chkPOPopUp.Value(0)
+	Gui.F_FlexibleNotes.chkSOAck.Value(0)
+	Gui.F_FlexibleNotes.chkSOPick.Value(0)
+	Gui.F_FlexibleNotes.chkSOPack.Value(0)
+	Gui.F_FlexibleNotes.chkSOInv.Value(0)
+	Gui.F_FlexibleNotes.chkQPrint.Value(0)
+	Gui.F_FlexibleNotes.chkPOPrint.Value(0)
+	Gui.F_FlexibleNotes.txtNotes.Text("")
+	Gui.F_FlexibleNotes.txtPart.Text("")
+	Gui.F_FlexibleNotes.txtRev.Text("")
+	Gui.F_FlexibleNotes.txtLoc.Text("")
+	
+	Gui.F_FlexibleNotes.txtPart.Enabled(True)
+	Gui.F_FlexibleNotes.txtRev.Enabled(True)
+	Gui.F_FlexibleNotes.txtLoc.Enabled(True)
+	Gui.F_FlexibleNotes.cmdPartLocBRW.Enabled(True)
+	
+	F.Data.DataTable.Clone("dt","dtSave",True)
+	F.Data.DataTable.Merge("dt","dtSave",True,3)
+	F.Data.DataTable.RemoveColumn("dtSave","PART_NUM")
+	F.Data.DataTable.RemoveColumn("dtSave","PART_REV")
+	F.ODBC.Connection!con.OpenCompanyConnection
+	F.Data.DataTable.SaveToDB("dtSave","con","GCG_5845_POP_NOTES","ID",7)
+	F.ODBC.Connection!con.Close
+	F.Data.DataTable.Close("dtSave")
+	F.Data.DataTable.AcceptChanges("dt")
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdDel_Click.End
+
+Program.Sub.cmdClear_Click.Start
+'Clears fields so that a new field can be added if an already existing notes has the fields populated
+F.Intrinsic.Control.Try
+
+Gui.F_FlexibleNotes.txtID.Text("")
+Gui.F_FlexibleNotes.chkSOPopUp.Value(0)
+Gui.F_FlexibleNotes.chkQPopUp.Value(0)
+Gui.F_FlexibleNotes.chkPOPopUp.Value(0)
+Gui.F_FlexibleNotes.chkSOAck.Value(0)
+Gui.F_FlexibleNotes.chkSOPick.Value(0)
+Gui.F_FlexibleNotes.chkSOPack.Value(0)
+Gui.F_FlexibleNotes.chkSOInv.Value(0)
+Gui.F_FlexibleNotes.chkQPrint.Value(0)
+Gui.F_FlexibleNotes.chkPOPrint.Value(0)
+Gui.F_FlexibleNotes.txtNotes.Text("")
+Gui.F_FlexibleNotes.txtPart.Text("")
+Gui.F_FlexibleNotes.txtRev.Text("")
+Gui.F_FlexibleNotes.txtLoc.Text("")
+
+Gui.F_FlexibleNotes.txtPart.Enabled(True)
+Gui.F_FlexibleNotes.txtRev.Enabled(True)
+Gui.F_FlexibleNotes.txtLoc.Enabled(True)
+Gui.F_FlexibleNotes.cmdPartLocBRW.Enabled(True)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdClear_Click.End
+
+Program.Sub.F_ShowNotes_UnLoad.Start
+'Ends program and closes DT
+F.Intrinsic.Control.Try
+
+F.Data.DataTable.Close("dt")
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.F_ShowNotes_UnLoad.End
+
+Program.Sub.gsNotes_RowClick.Start
+'Notes entry event click in GSGC
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.BlockEvents
+
+'Populates fields with information from the notes entry
+Gui.F_FlexibleNotes.txtID.Text(V.DataTable.dt(V.Args.RowIndex).ID!FieldValTrim)
+Gui.F_FlexibleNotes.chkSOPopUp.Value(V.DataTable.dt(V.Args.RowIndex).SO_POP!FieldVal)
+Gui.F_FlexibleNotes.chkQPopUp.Value(V.DataTable.dt(V.Args.RowIndex).Q_POP!FieldVal)
+Gui.F_FlexibleNotes.chkPOPopUp.Value(V.DataTable.dt(V.Args.RowIndex).PO_POP!FieldVal)
+Gui.F_FlexibleNotes.chkSOAck.Value(V.DataTable.dt(V.Args.RowIndex).SO_PRINT_ACK!FieldVal)
+Gui.F_FlexibleNotes.chkSOPick.Value(V.DataTable.dt(V.Args.RowIndex).SO_PRINT_PICK!FieldVal)
+Gui.F_FlexibleNotes.chkSOPack.Value(V.DataTable.dt(V.Args.RowIndex).SO_PRINT_PACK!FieldVal)
+Gui.F_FlexibleNotes.chkSOInv.Value(V.DataTable.dt(V.Args.RowIndex).SO_PRINT_INV!FieldVal)
+Gui.F_FlexibleNotes.chkQPrint.Value(V.DataTable.dt(V.Args.RowIndex).Q_PRINT!FieldVal)
+Gui.F_FlexibleNotes.chkPOPrint.Value(V.DataTable.dt(V.Args.RowIndex).PO_PRINT!FieldVal)
+Gui.F_FlexibleNotes.txtNotes.Text(V.DataTable.dt(V.Args.RowIndex).NOTES!FieldValTrim)
+F.Intrinsic.Control.CallSub(RevOptionCheck)
+F.Intrinsic.Control.If(V.Args.UseRev)
+	'Rev is in use
+	Gui.F_FlexibleNotes.txtPart.Text(V.DataTable.dt(V.Args.RowIndex).PART_NUM!FieldValTrim)
+	Gui.F_FlexibleNotes.txtRev.Text(V.DataTable.dt(V.Args.RowIndex).PART_REV!FieldValTrim)
+F.Intrinsic.Control.Else
+	'Rev is not in use
+	Gui.F_FlexibleNotes.txtPart.Text(V.DataTable.dt(V.Args.RowIndex).PART!FieldValTrim)
+F.Intrinsic.Control.EndIf
+Gui.F_FlexibleNotes.txtLoc.Text(V.DataTable.dt(V.Args.RowIndex).LOCATION!FieldValTrim)
+
+'Saves Row number for future use (editing, deleting)
+V.Global.i.Set(V.Args.RowIndex)
+
+Gui.F_FlexibleNotes.txtPart.Enabled(False)
+Gui.F_FlexibleNotes.txtRev.Enabled(False)
+Gui.F_FlexibleNotes.txtLoc.Enabled(False)
+Gui.F_FlexibleNotes.cmdPartLocBRW.Enabled(False)
+
+F.Intrinsic.Control.UnBlockEvents
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.gsNotes_RowClick.End
+
+Program.Sub.GetGridView.Start
+'Populates and edits GSGC style for notes
+F.Intrinsic.Control.Try
+
+Gui.F_FlexibleNotes.gsNotes.AddGridviewFromDatatable("gvNotes","dt")
+
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotes","MultiSelect",False)
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotes","AllowSort",True)
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotes","AllowFilter",True)
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotes","OptionsDetailShowDetailTabs",False)
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotes","OptionsViewShowGroupPanel",True)
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotes","EnableAppearanceEvenRow",True)
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotes","OptionsViewColumnAutoWidth",False)
+Gui.F_FlexibleNotes.gsNotes.SetGridViewProperty("gvNotes","ColumnPanelRowHeight",35)
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotes","OptionsViewRowAutoHeight",True)
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotes","ShowGroupPanel",False)
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","ID","Visible",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PART","Visible",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PART_NUM","Visible",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PART_REV","Visible",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","LOCATION","Visible",False)
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_POP","Caption","SO PopUp")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","Q_POP","Caption","Quote PopUp")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PO_POP","Caption","PO PopUp")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_ACK","Caption","Order Ack")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_PACK","Caption","Packing List")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_PICK","Caption","Pick List")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_INV","Caption","Invoice")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","Q_PRINT","Caption","Quote")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PO_PRINT","Caption","PO")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","NOTES","Caption","Notes")
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_POP","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","Q_POP","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PO_POP","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_ACK","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_PACK","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_PICK","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_INV","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","Q_PRINT","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PO_PRINT","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","NOTES","AllowEdit",False)
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_POP","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","Q_POP","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PO_POP","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_ACK","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_PACK","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_PICK","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_INV","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","Q_PRINT","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PO_PRINT","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","NOTES","AllowFocus",False)
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_POP","MinWidth",50)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","Q_POP","MinWidth",50)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PO_POP","MinWidth",50)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_ACK","MinWidth",40)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_PACK","MinWidth",55)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_PICK","MinWidth",40)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_INV","MinWidth",55)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","Q_PRINT","MinWidth",43)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PO_PRINT","MinWidth",25)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","NOTES","MinWidth",129)
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","NOTES","Width",129)
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_POP","MaxWidth",50)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","Q_POP","MaxWidth",50)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PO_POP","MaxWidth",50)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_ACK","MaxWidth",40)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_PACK","MaxWidth",55)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_PICK","MaxWidth",40)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_INV","MaxWidth",55)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","Q_PRINT","MaxWidth",43)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PO_PRINT","MaxWidth",25)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","NOTES","MaxWidth",1512)
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_POP","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","Q_POP","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PO_POP","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_ACK","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_PACK","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_PICK","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_INV","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","Q_PRINT","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PO_PRINT","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","NOTES","HeaderFontBold",True)
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_POP","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","Q_POP","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PO_POP","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_ACK","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_PACK","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_PICK","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_INV","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","Q_PRINT","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PO_PRINT","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","NOTES","HeaderHAlignment","Center")
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_POP","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","Q_POP","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PO_POP","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_ACK","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_PACK","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_PICK","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","SO_PRINT_INV","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","Q_PRINT","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","PO_PRINT","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","NOTES","HeaderWordWrap","Wrap")
+	
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","NOTES","CellHAlignment","Near")
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotes","NOTES","CellWordWrap","Wrap")
+
+Gui.F_FlexibleNotes.gsNotes.MainView("gvNotes")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.GetGridView.End
+
+Program.Sub.Serialize.Start
+V.Local.Serialize.Declare
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.If(V.Args.GV,=,"ONEPART")
+	'gvNotes
+	Gui.F_FlexibleNotes.gsNotes.Serialize("gvNotes",V.Local.Serialize)
+	F.Global.Registry.AddValue(V.Caller.User,V.Caller.CompanyCode,"GVNOTES",5845,1000,False,"Serialize",False,0,-999.0,1/1/1980,12:00:00 AM,V.Local.Serialize)
+F.Intrinsic.Control.Else
+	F.Intrinsic.Control.CallSub(RevOptionCheck)
+	F.Intrinsic.Control.If(V.Args.UseRev)
+		'Rev is in use
+		'gvNotesAllREV
+		Gui.F_FlexibleNotes.gsNotes.Serialize("gvNotesAll",V.Local.Serialize)
+		F.Global.Registry.AddValue(V.Caller.User,V.Caller.CompanyCode,"GVNOTESALLREV",5845,1000,False,"Serialize",False,0,-999.0,1/1/1980,12:00:00 AM,V.Local.Serialize)
+	F.Intrinsic.Control.Else
+		'Rev is not in use
+		'gvNotesAll
+		Gui.F_FlexibleNotes.gsNotes.Serialize("gvNotesAll",V.Local.Serialize)
+		F.Global.Registry.AddValue(V.Caller.User,V.Caller.CompanyCode,"GVNOTESALL",5845,1000,False,"Serialize",False,0,-999.0,1/1/1980,12:00:00 AM,V.Local.Serialize)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.Serialize.End
+
+Program.Sub.Deserialize.Start
+V.Local.Serialize.Declare
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.If(V.Args.GV,=,"ONEPART")
+	'gvNotes
+	F.Global.Registry.ReadValue(V.Caller.User,V.Caller.CompanyCode,"GVNOTES",5845,1000,6,"",V.Local.Serialize)
+	F.Intrinsic.Control.If(V.Local.Serialize.Trim,<>,"")
+		Gui.F_FlexibleNotes.gsNotes.Deserialize(V.Local.Serialize)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Else
+	F.Intrinsic.Control.CallSub(RevOptionCheck)
+	F.Intrinsic.Control.If(V.Args.UseRev)
+		'Rev is in use
+		'gvNotesAllREV
+		F.Global.Registry.ReadValue(V.Caller.User,V.Caller.CompanyCode,"GVNOTESALLREV",5845,1000,6,"",V.Local.Serialize)
+		F.Intrinsic.Control.If(V.Local.Serialize.Trim,<>,"")
+			Gui.F_FlexibleNotes.gsNotes.Deserialize(V.Local.Serialize)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Else
+		'Rev is not in use
+		'gvNotesAll
+		F.Global.Registry.ReadValue(V.Caller.User,V.Caller.CompanyCode,"GVNOTESALL",5845,1000,6,"",V.Local.Serialize)
+		F.Intrinsic.Control.If(V.Local.Serialize.Trim,<>,"")
+			Gui.F_FlexibleNotes.gsNotes.Deserialize(V.Local.Serialize)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.Deserialize.End
+
+Program.Sub.RevOptionCheck.Start
+'check if the Part Revision option is turned on and return it in an argument
+V.Local.bUseRev.Declare
+F.Intrinsic.Control.Try
+
+F.Global.General.ReadOption("070008",0,False,"0000",V.Local.bUseRev)
+F.Intrinsic.Variable.AddRV("UseRev",V.Local.bUseRev)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.RevOptionCheck.End
+
+Program.Sub.MasterMenuItem.Start
+'Open flexible notes screen that has notes for all Parts
+V.Local.bGroup.Declare
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.CallSub(CheckForTable)
+
+'Check user against Delete group and then disables the delete button if they are not in it
+F.Global.Security.IsInGroup(V.Caller.User,"FLEXDEL",V.Local.bGroup)
+F.Intrinsic.Control.If(V.Local.bGroup,=,False)
+	Gui.F_FlexibleNotes.cmdDel.Enabled(False)
+F.Intrinsic.Control.EndIf
+
+Gui.F_FlexibleNotes.lblPart.Visible(True)
+Gui.F_FlexibleNotes.txtPart.Visible(True)
+F.Intrinsic.Control.CallSub(RevOptionCheck)
+F.Intrinsic.Control.If(V.Args.UseRev)
+	'Rev is in use
+	Gui.F_FlexibleNotes.txtPart.MaxLength(17)
+	Gui.F_FlexibleNotes.lblRev.Visible(True)
+	Gui.F_FlexibleNotes.txtRev.Visible(True)
+F.Intrinsic.Control.EndIf
+Gui.F_FlexibleNotes.lblLoc.Visible(True)
+Gui.F_FlexibleNotes.txtLoc.Visible(True)
+Gui.F_FlexibleNotes.cmdPartLocBRW.Visible(True)
+
+F.Intrinsic.Control.CallSub(GetDataTableAllParts)
+F.Intrinsic.Control.CallSub(GetGridViewAllParts)
+F.Intrinsic.Control.CallSub(Deserialize,"GV","ALLPARTS")
+Gui.F_FlexibleNotes..Show
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.MasterMenuItem.End
+
+Program.Sub.GetDataTableAllParts.Start
+'retrieve all the fields for specified part in custom table
+V.Local.sSQL.Declare
+F.Intrinsic.Control.Try
+
+F.ODBC.Connection!con.OpenCompanyConnection
+F.Data.DataTable.CreateFromSQL("dt","con","select ID, PART, rtrim(left(PART, 17)) as PART_NUM, rtrim(right(PART, 3)) as PART_REV, LOCATION, SO_POP, Q_POP, PO_POP, SO_PRINT_ACK, SO_PRINT_PICK, SO_PRINT_PACK, SO_PRINT_INV, Q_PRINT, PO_PRINT, rtrim(NOTES) as 'NOTES' from GCG_5845_POP_NOTES order by PART, LOCATION, ID",True)
+F.ODBC.Connection!con.Close
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.GetDataTableAllParts.End
+
+Program.Sub.GetGridViewAllParts.Start
+'Populates and edits GSGC style for notes with Parts included
+F.Intrinsic.Control.Try
+
+Gui.F_FlexibleNotes.gsNotes.AddGridviewFromDatatable("gvNotesAll","dt")
+
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotesAll","MultiSelect",False)
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotesAll","AllowSort",True)
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotesAll","AllowFilter",True)
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotesAll","OptionsDetailShowDetailTabs",False)
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotesAll","OptionsViewShowGroupPanel",True)
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotesAll","EnableAppearanceEvenRow",True)
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotesAll","OptionsViewColumnAutoWidth",False)
+Gui.F_FlexibleNotes.gsNotes.SetGridViewProperty("gvNotesAll","ColumnPanelRowHeight",35)
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotesAll","OptionsViewRowAutoHeight",True)
+Gui.F_FlexibleNotes.gsNotes.SetGridviewProperty("gvNotesAll","ShowGroupPanel",False)
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","ID","Visible",False)
+F.Intrinsic.Control.CallSub(RevOptionCheck)
+F.Intrinsic.Control.If(V.Args.UseRev)
+	'Rev is in use
+	Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART","Visible",False)
+F.Intrinsic.Control.Else
+	'Rev is not in use
+	Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_NUM","Visible",False)
+	Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_REV","Visible",False)
+F.Intrinsic.Control.EndIf
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART","Caption","Part")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_NUM","Caption","Part")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_REV","Caption","Rev")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","LOCATION","Caption","Loc")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_POP","Caption","SO PopUp")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","Q_POP","Caption","Quote PopUp")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PO_POP","Caption","PO PopUp")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_ACK","Caption","Order Ack")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_PACK","Caption","Packing List")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_PICK","Caption","Pick List")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_INV","Caption","Invoice")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","Q_PRINT","Caption","Quote")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PO_PRINT","Caption","PO")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","NOTES","Caption","Notes")
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_NUM","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_REV","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","LOCATION","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_POP","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","Q_POP","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PO_POP","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_ACK","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_PACK","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_PICK","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_INV","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","Q_PRINT","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PO_PRINT","AllowEdit",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","NOTES","AllowEdit",False)
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_NUM","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_NUM","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","LOCATION","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_POP","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","Q_POP","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PO_POP","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_ACK","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_PACK","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_PICK","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_INV","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","Q_PRINT","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PO_PRINT","AllowFocus",False)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","NOTES","AllowFocus",False)
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART","MinWidth",50)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_NUM","MinWidth",50)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_REV","MinWidth",30)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","LOCATION","MinWidth",30)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_POP","MinWidth",50)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","Q_POP","MinWidth",50)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PO_POP","MinWidth",50)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_ACK","MinWidth",40)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_PACK","MinWidth",55)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_PICK","MinWidth",40)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_INV","MinWidth",55)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","Q_PRINT","MinWidth",43)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PO_PRINT","MinWidth",25)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","NOTES","MinWidth",129)
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART","Width",100)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_NUM","Width",100)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_REV","Width",35)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","LOCATION","Width",35)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","NOTES","Width",129)
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART","MaxWidth",175)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_NUM","MaxWidth",175)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_REV","MaxWidth",50)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","LOCATION","MaxWidth",50)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_POP","MaxWidth",50)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","Q_POP","MaxWidth",50)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PO_POP","MaxWidth",50)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_ACK","MaxWidth",40)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_PACK","MaxWidth",55)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_PICK","MaxWidth",40)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_INV","MaxWidth",55)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","Q_PRINT","MaxWidth",43)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PO_PRINT","MaxWidth",25)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","NOTES","MaxWidth",1512)
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_NUM","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_REV","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","LOCATION","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_POP","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","Q_POP","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PO_POP","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_ACK","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_PACK","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_PICK","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_INV","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","Q_PRINT","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PO_PRINT","HeaderFontBold",True)
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","NOTES","HeaderFontBold",True)
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_NUM","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PART_REV","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","LOCATION","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_POP","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","Q_POP","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PO_POP","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_ACK","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_PACK","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_PICK","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_INV","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","Q_PRINT","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PO_PRINT","HeaderHAlignment","Center")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","NOTES","HeaderHAlignment","Center")
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_POP","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","Q_POP","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PO_POP","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_ACK","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_PACK","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_PICK","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","SO_PRINT_INV","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","Q_PRINT","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","PO_PRINT","HeaderWordWrap","Wrap")
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","NOTES","HeaderWordWrap","Wrap")
+	
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","NOTES","CellHAlignment","Near")
+
+Gui.F_FlexibleNotes.gsNotes.SetColumnProperty("gvNotesAll","NOTES","CellWordWrap","Wrap")
+
+Gui.F_FlexibleNotes.gsNotes.MainView("gvNotesAll")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.GetGridViewAllParts.End
+
+Program.Sub.cmdPartLocBRW_Click.Start
+V.Local.sRet.Declare
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.CallSub(RevOptionCheck)
+F.Intrinsic.Control.If(V.Args.UseRev)
+	'Rev is in use
+	F.Intrinsic.UI.Browser(100,,V.Local.sRet)
+F.Intrinsic.Control.Else
+	'Rev is not in use
+	F.Intrinsic.UI.Browser(105,,V.Local.sRet)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Local.sRet.IsNotCancel)
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	
+	F.Intrinsic.Control.If(V.Args.UseRev)
+		'Rev is in use
+		Gui.F_FlexibleNotes.txtPart.Text(V.Local.sRet(0))
+		Gui.F_FlexibleNotes.txtRev.Text(V.Local.sRet(1))
+		Gui.F_FlexibleNotes.txtLoc.Text(V.Local.sRet(2))
+	F.Intrinsic.Control.Else
+		'Rev is not in use
+		Gui.F_FlexibleNotes.txtPart.Text(V.Local.sRet(0))
+		Gui.F_FlexibleNotes.txtLoc.Text(V.Local.sRet(1))
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdPartLocBRW_Click.End
+
+Program.Sub.CheckForPartAndColor.Start
+'Args: V.Args.PartID, V.Args.RevID, V.Args.LocID, V.Args.ButtonID, V.Args.PopType
+'Checks for part in custom table and highlights button if it exists
+F.Intrinsic.Control.Try
+
+'Check for part
+F.Intrinsic.Control.If(V.Passed.[V.Args.PartID],=,"")
+	F.Intrinsic.Variable.SetProperty(V.Args.ButtonID,"BC",V.Color.Red)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.CallSub(CheckForTable)
+
+'Grab Part and Loc
+F.Intrinsic.Control.CallSub(RevOptionCheck)
+F.Intrinsic.Control.If(V.Args.UseRev)
+	'Part Revision is on
+	F.Intrinsic.String.GSSPartString(V.Passed.[V.Args.PartID],V.Passed.[V.Args.RevID],V.Global.sPart)
+F.Intrinsic.Control.Else
+	'Part Revision is off
+	V.Global.sPart.Set(V.Passed.[V.Args.PartID])
+F.Intrinsic.Control.EndIf
+V.Global.sLoc.Set(V.Passed.[V.Args.LocID])
+
+F.Intrinsic.Control.CallSub(GetDataTable,"PopType",V.Args.PopType)
+
+'Special cases for each screen
+F.Data.DataView.Create("dt","dv")
+F.Intrinsic.Control.SelectCase(V.Args.PopType)
+	F.Intrinsic.Control.Case("Q")
+		F.Data.DataView.SetFilter("dt","dv","Q_POP = 1")
+	F.Intrinsic.Control.Case("SO")
+		F.Data.DataView.SetFilter("dt","dv","SO_POP = 1")
+	F.Intrinsic.Control.Case("PO")
+		F.Data.DataView.SetFilter("dt","dv","PO_POP = 1")
+	F.Intrinsic.Control.CaseElse
+		F.Data.DataView.SetFilter("dt","dv","")
+F.Intrinsic.Control.EndSelect
+
+'If part has existing notes, make the button outline ~~green~~ yellow, otherwise make it red
+F.Intrinsic.Control.If(V.DataView.dt!dv.RowCount,!=,0)
+	F.Intrinsic.Variable.SetProperty(V.Args.ButtonID,"BC",V.Color.Yellow)
+F.Intrinsic.Control.Else
+	F.Intrinsic.Variable.SetProperty(V.Args.ButtonID,"BC",V.Color.Red)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.CheckForPartAndColor.End
+
+Program.Sub.ScriptButtonLaunch.Start
+'Args: V.Args.PartID, V.Args.RevID, V.Args.LocID
+'Sets up and launches Flexible Item Notes Form for part from header
+V.Local.bGroup.Declare
+F.Intrinsic.Control.Try
+
+'Check for part
+F.Intrinsic.Control.If(V.Passed.[V.Args.PartID],=,"")
+	F.Intrinsic.UI.Msgbox("No Part selected, please enter a valid part number and try again.","Exiting 'Flexible Item Notes' Module")
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.CallSub(CheckForTable)
+
+'Grab Part and Loc
+F.Intrinsic.Control.CallSub(RevOptionCheck)
+F.Intrinsic.Control.If(V.Args.UseRev)
+	'Part Revision is on
+	F.Intrinsic.String.GSSPartString(V.Passed.[V.Args.PartID],V.Passed.[V.Args.RevID],V.Global.sPart)
+F.Intrinsic.Control.Else
+	'Part Revision is off
+	V.Global.sPart.Set(V.Passed.[V.Args.PartID])
+F.Intrinsic.Control.EndIf
+V.Global.sLoc.Set(V.Passed.[V.Args.LocID])
+
+'Check user against Delete group and then disables the delete button if they are not in it
+F.Global.Security.IsInGroup(V.Caller.User,"FLEXDEL",V.Local.bGroup)
+F.Intrinsic.Control.If(V.Local.bGroup,=,False)
+	Gui.F_FlexibleNotes.cmdDel.Enabled(False)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.CallSub(GetDataTable,"PopType",V.Args.PopType)
+F.Intrinsic.Control.CallSub(GetGridView)
+F.Intrinsic.Control.CallSub(Deserialize,"GV","ONEPART")
+Gui.F_FlexibleNotes..Show
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.ScriptButtonLaunch.End
+
+Program.Sub.PartAddEvent.Start
+'Args: V.Args.PartID, V.Args.RevID, V.Args.LocID, V.Args.PopType
+'Setup and launches small screen with Specific Notes if part is setup to have it pop up in custom table
+F.Intrinsic.Control.Try
+
+'Check for part
+F.Intrinsic.Control.If(V.Passed.[V.Args.PartID],=,"")
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.CallSub(CheckForTable)
+
+'Grab Part and Loc
+F.Intrinsic.Control.CallSub(RevOptionCheck)
+F.Intrinsic.Control.If(V.Args.UseRev)
+	'Part Revision is on
+	F.Intrinsic.String.GSSPartString(V.Passed.[V.Args.PartID],V.Passed.[V.Args.RevID],V.Global.sPart)
+F.Intrinsic.Control.Else
+	'Part Revision is off
+	V.Global.sPart.Set(V.Passed.[V.Args.PartID])
+F.Intrinsic.Control.EndIf
+V.Global.sLoc.Set(V.Passed.[V.Args.LocID])
+
+F.Intrinsic.Control.CallSub(GetDataTable,"PopType",V.Args.PopType)
+
+F.Intrinsic.Control.SelectCase(V.Args.PopType.UCase)
+	F.Intrinsic.Control.Case("Q")
+		'Quote Lines
+		F.Intrinsic.Control.CallSub(PopulateQNotes)
+	F.Intrinsic.Control.Case("SO")
+		'SO Lines
+		F.Intrinsic.Control.CallSub(PopulateSONotes)
+	F.Intrinsic.Control.Case("PO")
+		'PO Lines
+		F.Intrinsic.Control.CallSub(PopulatePONotes)
+F.Intrinsic.Control.EndSelect
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.PartAddEvent.End
+
+Program.Sub.CheckQuoteLinesTempFile.Start
+'Args: V.Args.PartID, V.Args.RevID, V.Args.LocID
+V.Local.sPath.Declare
+V.Local.sFileString.Declare
+V.Local.bExists.Declare
+F.Intrinsic.Control.Try
+
+'Grab Part and Loc
+F.Intrinsic.Control.CallSub(RevOptionCheck)
+F.Intrinsic.Control.If(V.Args.UseRev)
+	'Part Revision is on
+	F.Intrinsic.String.GSSPartString(V.Passed.[V.Args.PartID],V.Passed.[V.Args.RevID],V.Global.sPart)
+F.Intrinsic.Control.Else
+	'Part Revision is off
+	V.Global.sPart.Set(V.Passed.[V.Args.PartID])
+F.Intrinsic.Control.EndIf
+V.Global.sLoc.Set(V.Passed.[V.Args.LocID])
+F.Intrinsic.String.RPad(V.Global.sPart," ",20,V.Global.sPart)
+F.Intrinsic.String.RPad(V.Global.sLoc," ",2,V.Global.sLoc)
+
+F.Intrinsic.String.Build("{0}GCG_5845_QTELN_Part",V.Caller.LocalGSSTempDir,V.Local.sPath)
+F.Intrinsic.File.Exists(V.Local.sPath,V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists)
+	'File exists, read it and compare it to the part
+	F.Intrinsic.File.File2String(V.Local.sPath,V.Local.sFileString)
+	F.Intrinsic.Control.If(V.Global.sPart,=,V.Local.sFileString.Left20,and,V.Global.sLoc,=,V.Local.sFileString.Right2)
+		'Already pulled up notes for this part, kill the program
+		F.Intrinsic.Control.End
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.File.DeleteFile(V.Local.sPath)
+F.Intrinsic.Control.EndIf
+
+'Add current part to file
+F.Intrinsic.String.Build("{0}{1}",V.Global.sPart,V.Global.sLoc,V.Local.sFileString)
+F.Intrinsic.File.String2File(V.Local.sPath,V.Local.sFileString)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.CheckQuoteLinesTempFile.End
+
+Program.Sub.DeleteQuoteLinesTempFile.Start
+V.Local.sPath.Declare
+V.Local.bExists.Declare
+F.Intrinsic.Control.Try
+
+F.Intrinsic.String.Build("{0}GCG_5845_QTELN_Part",V.Caller.LocalGSSTempDir,V.Local.sPath)
+F.Intrinsic.File.Exists(V.Local.sPath,V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists)
+	'File exists, delete it
+	F.Intrinsic.File.DeleteFile(V.Local.sPath)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage,"ScriptFile",V.Caller.ScriptFile,"CurrentSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.DeleteQuoteLinesTempFile.End
+
+Program.Sub.Comments.Start
+${$5$}$2.0.0.0$}$2
+${$6$}$triley$}$20231121105735447$}$iK6nerqp9nur1h1iSBfRKBBz1ENCgYv6gfXxvLgc45xMSSpSCYCPuvhfNBlV4+3fM3GXjsoCG9Y=
+Program.Sub.Comments.End
